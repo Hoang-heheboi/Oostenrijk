@@ -28,14 +28,10 @@ body{
 }
 
 /* Generic button styling so all buttons center and animate smoothly */
-button{
-    align-self: center; /* center buttons horizontally */
-    font-size: 1.2em;
-}
 
 #button1{
     position: relative;
-    margin-top: 6.3%;
+    margin-top: 12%;
     background-color: rgb(255, 255, 255);
     color: rgb(138, 0, 23);
     border-radius: 10px;
@@ -56,7 +52,7 @@ button{
     color: rgb(138, 0, 23);
     border-radius: 10px;
     padding: 8px 16px;
-    border: 2px solid transparent; /* keep layout stable when hovering */
+    border: 2px solid transparent 1px solid rgb(0,0,0); /* keep layout stable when hovering */
     cursor: pointer;
     transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease, transform 180ms ease;
 }
@@ -72,9 +68,10 @@ button{
     color: rgb(138, 0, 23);
     border-radius: 10px;
     padding: 8px 16px;
-    border: 2px solid transparent; /* keep layout stable when hovering */
+    border: 2px solid transparent 1px solid rgb(0,0,0); /* keep layout stable when hovering */
     cursor: pointer;
     transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease, transform 180ms ease;
+    margin: 0;
 }
 #button3:hover{
     background-color: rgb(98, 5, 21);
