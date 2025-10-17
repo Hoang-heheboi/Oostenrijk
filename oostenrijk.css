@@ -21,28 +21,21 @@ body{
     margin: 0;
 }
 #Title{
-    margin-top: 5%;
+    margin-top: 4%;
     color: rgb(255, 255, 255);
     padding: 6px 0 0 0;
+    font-size: 3em;
 }
 
 /* Generic button styling so all buttons center and animate smoothly */
 button{
-    padding: 8px 16px;
-    border-radius: 10px;
-    border: 2px solid transparent; /* prevents layout shift on hover */
-    cursor: pointer;
-    transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease, transform 180ms ease;
-    background: transparent; /* allow individual buttons to set their own background */
+    align-self: center; /* center buttons horizontally */
+    font-size: 1.2em;
 }
 
-button h2{ /* remove default margins inside buttons */
-    margin: 0;
-    font-size: 1.05rem;
-}
 #button1{
     position: relative;
-    margin-top: 7%;
+    margin-top: 6.3%;
     background-color: rgb(255, 255, 255);
     color: rgb(138, 0, 23);
     border-radius: 10px;
