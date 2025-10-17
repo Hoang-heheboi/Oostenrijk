@@ -1,0 +1,92 @@
+/* Use the body element (not an #body id) and ensure the pseudo-element is generated
+	 and covers the viewport. */
+body{
+    /* Austria flag: three horizontal stripes (red - white - red) */
+    background: linear-gradient(180deg,
+        rgb(200,16,46) 0%,
+        rgb(200,16,46) 33.333%,
+        rgb(255,255,255) 33.333%,
+        rgb(255,255,255) 66.666%,
+        rgb(200,16,46) 66.666%,
+        rgb(200,16,46) 100%
+    );
+    /* center content horizontally, stack items vertically; start from the top */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* horizontal centering */
+    justify-content: flex-start; /* align items from the top */
+    gap: 18px; /* space between title and buttons */
+    min-height: 100vh; /* ensure body fills viewport */
+    padding-top: 28px; /* space from the top edge */
+    margin: 0;
+}
+#Title{
+    margin-top: 5%;
+    color: rgb(255, 255, 255);
+    padding: 6px 0 0 0;
+}
+
+/* Generic button styling so all buttons center and animate smoothly */
+button{
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px solid transparent; /* prevents layout shift on hover */
+    cursor: pointer;
+    transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease, transform 180ms ease;
+    background: transparent; /* allow individual buttons to set their own background */
+}
+
+button h2{ /* remove default margins inside buttons */
+    margin: 0;
+    font-size: 1.05rem;
+}
+#button1{
+    position: relative;
+    margin-top: 7%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(138, 0, 23);
+    border-radius: 10px;
+    padding: 8px 16px;
+    border: 2px solid transparent 1px solid rgb(0,0,0); /* keep layout stable when hovering */
+    cursor: pointer;
+    transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease, transform 180ms ease;
+}
+#button1:hover{
+    background-color: rgb(98, 5, 21);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(26, 1, 1);
+    border-radius: 10px;
+}
+#button2{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(138, 0, 23);
+    border-radius: 10px;
+    padding: 8px 16px;
+    border: 2px solid transparent; /* keep layout stable when hovering */
+    cursor: pointer;
+    transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease, transform 180ms ease;
+}
+#button2:hover{
+    background-color: rgb(98, 5, 21);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(26, 1, 1);
+    border-radius: 10px;
+}
+#button3{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(138, 0, 23);
+    border-radius: 10px;
+    padding: 8px 16px;
+    border: 2px solid transparent; /* keep layout stable when hovering */
+    cursor: pointer;
+    transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease, transform 180ms ease;
+}
+#button3:hover{
+    background-color: rgb(98, 5, 21);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(26, 1, 1);
+    border-radius: 10px;
+}
+
